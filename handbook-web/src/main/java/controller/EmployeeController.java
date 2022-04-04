@@ -10,7 +10,7 @@ import java.util.List;
 
 @RestController
 @Slf4j
-@RequestMapping("/handbook/v1/")
+@RequestMapping("/hb")
 @Tag(name = "Конетроллео для оработы с сотрудниками")
 public class EmployeeController {
 
@@ -21,22 +21,22 @@ public class EmployeeController {
         this.employeeService = employeeService;
     }
 
-    @GetMapping("employees")
+    @GetMapping("/employees")
     public List<Employee> showAllEmployee(){
         return employeeService.getAllEmployees();
     }
 
-    @GetMapping("employee/{id}")
+    @GetMapping("/employee/{id}")
     public Employee getEmployeeById(@PathVariable int id){
         return employeeService.getEmployeeById(id);
     }
 
-    @DeleteMapping("employee/{id}}")
+    @DeleteMapping("/employee/{id}}")
     public void deleteEmployeeById(@PathVariable int id){
         employeeService.deleteEmployeeById(id);
     }
 
-    @PutMapping("employee")
+    @PutMapping("/employee")
     public void saveEmployee(Employee employee){
         employeeService.saveEmployee(employee);
     }
