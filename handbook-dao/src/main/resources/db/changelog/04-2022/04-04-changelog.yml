@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: 20220404
+      author: QMIS
+      changes:
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: first_name
+                  value: Валерий
+              - column:
+                  name: last_name
+                  value: Жмышенко
+              - column:
+                  name: email
+                  value: pvnz@mail.com
+              - column:
+                  name: emp_date
+                  valueDate: 2020-11-27 2:57:05
+              - column:
+                  name: position
+                  value: трудяга
+              - column:
+                  name: role
+                  value: USER
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: first_name
+                  value: Упал
+              - column:
+                  name: last_name
+                  value: Намоченный
+              - column:
+                  name: email
+                  value: boos@mail.com
+              - column:
+                  name: emp_date
+                  valueDate: 2019-10-27 12:30:00
+              - column:
+                  name: position
+                  value: начальник
+              - column:
+                  name: role
+                  value: ADMIN
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: first_name
+                  value: Клим
+              - column:
+                  name: last_name
+                  value: Саныч
+              - column:
+                  name: email
+                  value: history@mail.com
+              - column:
+                  name: emp_date
+                  valueDate: 2012-11-27 10:40:05
+              - column:
+                  name: position
+                  value: менеджер
+              - column:
+                  name: role
+                  value: USER
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: first_name
+                  value: Дим
+              - column:
+                  name: last_name
+                  value: Юрич
+              - column:
+                  name: email
+                  value: oper@mail.com
+              - column:
+                  name: emp_date
+                  valueDate: 2022-03-22 2:57:05
+              - column:
+                  name: position
+                  value: работяга
+              - column:
+                  name: role
+                  value: USER

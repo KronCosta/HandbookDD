@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,8 +10,24 @@
         <module name="handbook-util" />
         <module name="handbook-web" />
         <module name="handbook-dao" />
+        <module name="handbook" />
+        <module name="handbook-main" />
         <module name="handbook-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="handbook-main" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HandbookDD" options="" />
+      <module name="handbook" options="-parameters" />
+      <module name="handbook-dao" options="-parameters" />
+      <module name="handbook-main" options="-parameters" />
+      <module name="handbook-service" options="-parameters" />
+      <module name="handbook-util" options="-parameters" />
+      <module name="handbook-web" options="-parameters" />
+    </option>
   </component>
 </project>

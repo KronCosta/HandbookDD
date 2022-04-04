@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
+        objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
+    <changeSet id="30032022" author="QMIS">
+
+
+        <createTable tableName="employee">
+            <column autoIncrement="true" name="id" type="int">
+            <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="first_name" type="varchar(50)"> </column>
+            <column name="last_name" type="varchar(50)"> </column>
+            <column name="email" type="varchar(50)"> </column>
+            <column name="emp_date" type="datetime"> </column>
+            <column name="position" type="varchar(255)"> </column>
+            <column name="role" type="varchar(255)"> </column>
+        </createTable>
+
+<!--        <createTable tableName="user">-->
+<!--            <column name="role" type="varchar(20)"> </column>-->
+<!--            <column name="login" type="varchar(20)"> </column>-->
+<!--            <column name="password" type="varchar(20)"> </column>-->
+<!--        </createTable>-->
+
+        <createTable tableName="department">
+            <column autoIncrement="true" name="id" type="int" >
+                <constraints nullable="false" primaryKey="true" primaryKeyName="emp_key"/>
+            </column>
+            <column name="parent_id" type="int"> </column>
+            <column name="name" type="varchar(255)"> </column>
+            <column name="chief" type="varchar(255)"> </column>
+            <column name="employee_list" type="varchar(255)"> </column>
+            <column name="rank" type="varchar(255)"> </column>
+        </createTable>
+
+    </changeSet>
+
+</databaseChangeLog>

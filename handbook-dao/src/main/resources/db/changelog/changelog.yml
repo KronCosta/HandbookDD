@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: 03-2022/30-03-changelog.xml
+      relativeToChangelogFile: true
+  - include:
+      file: 04-2022/04-04-changelog.yml
+      relativeToChangelogFile: true
