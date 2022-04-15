@@ -21,12 +21,6 @@
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>org.qmis.handbook</groupId>
-            <artifactId>handbook-util</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>

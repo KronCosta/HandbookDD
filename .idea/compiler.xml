@@ -7,7 +7,6 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="handbook-util" />
         <module name="handbook-web" />
         <module name="handbook-dao" />
         <module name="handbook" />
@@ -17,6 +16,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="handbook-main" target="17" />
+      <module name="handbook-util" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

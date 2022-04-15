@@ -21,6 +21,11 @@
             <artifactId>handbook-dao</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.3.18</version>
+        </dependency>
     </dependencies>
 
     <properties>

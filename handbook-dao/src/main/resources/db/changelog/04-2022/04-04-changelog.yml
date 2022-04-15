@@ -20,7 +20,7 @@ databaseChangeLog:
                   valueDate: 2020-11-27 2:57:05
               - column:
                   name: position
-                  value: трудяга
+                  value: Специалист
               - column:
                   name: role
                   value: USER
@@ -41,7 +41,7 @@ databaseChangeLog:
                   valueDate: 2019-10-27 12:30:00
               - column:
                   name: position
-                  value: начальник
+                  value: Руководитель
               - column:
                   name: role
                   value: ADMIN
@@ -62,7 +62,7 @@ databaseChangeLog:
                   valueDate: 2012-11-27 10:40:05
               - column:
                   name: position
-                  value: менеджер
+                  value: Ведущий специалист
               - column:
                   name: role
                   value: USER
@@ -83,7 +83,52 @@ databaseChangeLog:
                   valueDate: 2022-03-22 2:57:05
               - column:
                   name: position
-                  value: работяга
+                  value: Специалист
               - column:
                   name: role
                   value: USER
+#         - insert:
+#             tableName: position_directory
+#             columns:
+#               - column:
+#                   name: rank
+#                   value: null
+#               - column:
+#                   name: position
+#                   value: Генеральный директор
+#         - insert:
+#             tableName: position_directory
+#             columns:
+#               - column:
+#                   name: rank
+#                   value: 1
+#               - column:
+#                   name: position
+#                   value: Руководитель
+#         - insert:
+#             tableName: position_directory
+#             columns:
+#               - column:
+#                   name: rank
+#                   value: 2
+#               - column:
+#                   name: position
+#                   value: Ведущий специалист
+#         - insert:
+#             tableName: position_directory
+#             columns:
+#               - column:
+#                   name: rank
+#                   value: 3
+#               - column:
+#                   name: position
+#                   value: Специалист
+#         - insert:
+#             tableName: position_directory
+#             columns:
+#               - column:
+#                   name: rank
+#                   value: 4
+#               - column:
+#                   name: position
+#                   value: Стажер

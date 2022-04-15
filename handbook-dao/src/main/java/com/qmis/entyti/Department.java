@@ -1,4 +1,4 @@
-package entyti;
+package com.qmis.entyti;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -13,28 +13,22 @@ import java.util.Collection;
 public class Department {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Long id;
+    private Integer id;
+
+
+    @Column(name = "parent_id")
+    private Integer parentId;
+
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "chief_id")
-    private int chief_id;
+    private Integer chiefId;
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private Collection<Employee> employeeList;
 
-
-    @Override
-    public String toString() {
-        return "Department{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", chief=" + chief_id +
-                ", employeeList=" + employeeList +
-                ", rank='" + '\'' +
-                '}';
-    }
 }

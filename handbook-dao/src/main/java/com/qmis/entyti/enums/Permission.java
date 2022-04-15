@@ -1,4 +1,4 @@
-package entyti.enums;
+package com.qmis.entyti.enums;
 
 public enum Permission {
     USER("user:read,search"),

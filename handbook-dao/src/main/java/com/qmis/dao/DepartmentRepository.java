@@ -1,6 +1,6 @@
-package repository;
+package com.qmis.dao;
 
-import entyti.Department;
+import com.qmis.entyti.Department;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
