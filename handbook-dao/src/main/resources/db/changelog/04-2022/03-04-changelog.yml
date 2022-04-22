@@ -1,26 +1,18 @@
 databaseChangeLog:
   - changeSet:
-      id: addDepartment
+      id: addTestPosition
       author: QMIS
       changes:
         - insert:
-            tableName: department
+            tableName: position
             columns:
               - column:
                   name: name
-                 value: Jma-Airlines
-              - column:
-                  name: chief_id
-                  value:
-              - column:
-                  name: e_mail
-                 value: pvnz@mail.com
-              - column:
-                  name: emp_date
-                  valueDate: 2020-11-27 2:57:05
-              - column:
-                  name: position
-                 value: трудяга
+                 value: Руководитель
               - column:
                   name: role
-                 value: USER
+                 value: ADMIN
+              - column:
+                  name: employee_list
+                 value: 1
+

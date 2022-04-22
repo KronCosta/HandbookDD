@@ -1,4 +1,4 @@
-package com.qmis.entyti.enums;
+package com.qmis.entity.enums;
 
 import java.util.Set;
 

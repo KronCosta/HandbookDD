@@ -1,34 +1,31 @@
-package com.qmis.entyti;
+package com.qmis.entity;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import java.util.Collection;
+import java.util.Set;
 
 @Entity
-@Table(name = "department")
 @Setter
 @Getter
+@Table(name = "department")
 public class Department {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
-
+    private long id;
 
     @Column(name = "parent_id")
-    private Integer parentId;
-
+    private long parentId;
 
     @Column(name = "name")
     private String name;
 
     @Column(name = "chief_id")
-    private Integer chiefId;
+    private long chiefId;
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private Collection<Employee> employeeList;
-
+    private Set<Employee> employeeList;
 }

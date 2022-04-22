@@ -5,77 +5,98 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
                       http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd"
         objectQuotingStrategy="QUOTE_ONLY_RESERVED_WORDS">
-    <changeSet id="createTableEmployee" author="QMIS" >
-        <createTable tableName="employee">
-            <column autoIncrement="true" name="id" type="int">
-                <constraints nullable="false" primaryKey="true"/>
-            </column>
-            <column name="first_name" type="varchar(50)"/>
-            <column name="last_name" type="varchar(50)"/>
-            <column name="email" type="varchar(50)"/>
-            <column name="emp_date" type="date"/>
-            <column name="position" type="varchar(255)"/>
-            <column name="department_id" type="int"/>
-            <column name="role" type="varchar(255)"/>
-        </createTable>
-    </changeSet>
 
-    <changeSet id="createTableDepartment" author="QMIS" >
+    <changeSet id="createTableDepartment" author="QMIS">
         <createTable tableName="department">
-            <column autoIncrement="true" name="id" type="int">
-                <constraints nullable="false" primaryKey="true" primaryKeyName="emp_key"/>
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="dep_key"/>
             </column>
             <column name="name" type="varchar(255)"/>
-            <column name="parent_id" type="int"/>
-            <column name="chief_id" type="int"/>
+            <column name="parent_id" type="bigint"/>
+            <column name="chief_id" type="bigint"/>
             <column name="employee_list" type="varchar(255)"/>
-            <column name="rank" type="varchar(255)"/>
         </createTable>
     </changeSet>
 
-    <changeSet id="createTableDepartmentRepository" author="QMIS" >
-        <createTable tableName="department_repository">
-            <column autoIncrement="true" name="id" type="int">
-                <constraints nullable="false" primaryKey="true"/>
+    <changeSet id="createPositionTable" author="QMIS">
+        <createTable tableName="position">
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="pos_key"/>
             </column>
-            <column name="parent_id" type="int">
-                <constraints nullable="true"/>
-            </column>
-            <column name="department" type="varchar(255)"/>
+            <column name="name" type="varchar(255)"/>
+            <column name="role" type="varchar(255)"/>
+            <column name="employee_list" type="varchar(255)"/>
         </createTable>
     </changeSet>
-    <changeSet id="createDepartmentIndex" author="QMIS" >
+
+    <changeSet id="createTableEmployee" author="QMIS">
+        <createTable tableName="employee">
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="fio" type="varchar(50)"/>
+            <column name="email" type="varchar(50)"/>
+            <column name="emp_date" type="date"/>
+            <column name="position_id" type="bigint"/>
+            <column name="department_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+
+    <changeSet id="addForeignKeyEmployeeDepartment" author="QMIS">
+        <addForeignKeyConstraint baseTableName="employee"
+                                 baseColumnNames="department_id" constraintName="depId"
+                                 onUpdate="CASCADE" onDelete="CASCADE"
+                                 referencedTableName="department"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="addForeignKeyEmployeePosition" author="QMIS">
+        <addForeignKeyConstraint baseTableName="employee"
+                                 baseColumnNames="position_id" constraintName="posId"
+                                 onUpdate="CASCADE" onDelete="CASCADE"
+                                 referencedTableName="position"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+
+    <changeSet id="createTableDepartmentRepository" author="QMIS">
+        <createTable tableName="department_repository">
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="parent_id" type="bigint">
+                <constraints nullable="true"/>
+            </column>
+            <column name="department_name" type="varchar(255)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="createDepartmentIndex" author="QMIS">
         <createIndex tableName="department_repository" indexName="dep_index">
             <column name="parent_id"/>
         </createIndex>
     </changeSet>
-    <changeSet id="addForeignKeyDepartmentRepository" author="QMIS" >
+    <changeSet id="addForeignKeyDepartmentRepository" author="QMIS">
         <addForeignKeyConstraint baseTableName="department_repository"
                                  baseColumnNames="parent_id" constraintName="parent_id"
                                  onUpdate="CASCADE" onDelete="CASCADE"
                                  referencedTableName="department_repository"
                                  referencedColumnNames="id"/>
     </changeSet>
-    <changeSet id="addUserTable" author="QMIS">
+
+    <changeSet id="createUserTable" author="QMIS">
         <createTable tableName="user">
-            <column name="username" type="varchar(255)"/>
+            <column autoIncrement="true" name="id" type="bigint">
+                <constraints nullable="false" primaryKey="true" primaryKeyName="usr_key"/>
+            </column>
+            <column name="login" type="varchar(255)"/>
             <column name="password" type="varchar(255)"/>
 
         </createTable>
     </changeSet>
-</databaseChangeLog>
-        <!--        <createTable tableName="position_directory">-->
-        <!--            <column autoIncrement="true" name="id" type="int">-->
-        <!--                <constraints nullable="false" primaryKey="true"/>-->
-        <!--            </column>-->
-        <!--            <column name="position" type="varchar(255)"></column>-->
-        <!--        </createTable>-->
 
-        <!--        <createTable tableName="user">-->
-        <!--            <column name="role" type="varchar(20)"> </column>-->
-        <!--            <column name="login" type="varchar(20)"> </column>-->
-        <!--            <column name="password" type="varchar(20)"> </column>-->
-        <!--        </createTable>-->
+</databaseChangeLog>
 
 
 

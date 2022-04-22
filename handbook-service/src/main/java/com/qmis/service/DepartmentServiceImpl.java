@@ -1,7 +1,7 @@
 package com.qmis.service;
 
 import com.qmis.dao.DepartmentRepository;
-import com.qmis.entyti.Department;
+import com.qmis.entity.Department;
 import com.qmis.exception.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -30,13 +30,13 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Department getDepartmentById(Integer id) {
+    public Department getDepartmentById(long id) {
         return departmentRepository.findById(id).orElseThrow(() ->
                 new ResourceNotFoundException("Department","Id" ,id));
     }
 
     @Override
-    public Department updateDepartmentById(Department department, Integer id){
+    public Department updateDepartmentById(Department department, long id){
         // check
         Department existingDepartment = departmentRepository.findById(id).orElseThrow(() ->
                 new ResourceNotFoundException("Department","Id" ,id));
@@ -51,7 +51,7 @@ public class DepartmentServiceImpl implements DepartmentService {
         return existingDepartment;
     }
 
-    public void deleteDepartmentById(Integer id) {
+    public void deleteDepartmentById(long id) {
         departmentRepository.deleteById(id);
     }
 

@@ -1,7 +1,6 @@
-package com.qmis.entyti;
+package com.qmis.entity;
 
 
-import com.qmis.entyti.enums.Role;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
@@ -20,13 +19,10 @@ public class Employee {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
-    private Integer id;
+    private long id;
 
-    @Column(name = "first_name", length = 50, nullable = false)
-    private String firstName;
-
-    @Column(name = "last_name", length = 50)
-    private String lastName;
+    @Column(name = "fio", length = 50, nullable = false)
+    private String fio;
 
     @Column(name = "emp_date", nullable = false)
     private LocalDate employedDate;
@@ -34,14 +30,12 @@ public class Employee {
     @Column(name = "email", length = 50, unique = true)
     private String email;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL)
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     @JoinColumn(name = "department_id")
     private Department department;
 
-    @Column(name = "position", length = 50, nullable = true)
-    private String position;
+    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinColumn(name = "position_id", nullable = false, updatable = false)
+    private Position position;
 
-    @Enumerated(EnumType.STRING)
-    @Column(name = "role", columnDefinition = "enum('USER', 'MODERATOR', 'ADMIN')")
-    private Role role;
 }
