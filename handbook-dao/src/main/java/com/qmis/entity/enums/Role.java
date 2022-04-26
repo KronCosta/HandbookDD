@@ -1,13 +1,17 @@
 package com.qmis.entity.enums;
 
-import java.util.Set;
+import lombok.Getter;
+import lombok.Setter;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
-import static java.util.Set.of;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 
 public enum Role {
     USER(Set.of(Permission.USER)),
-    MODERATOR(of(Permission.USER, Permission.MODERATE)),
-    ADMIN(of(Permission.USER, Permission.MODERATE, Permission.ADMIN));
+    MODERATOR(Set.of(Permission.USER, Permission.MODERATE)),
+    ADMIN(Set.of(Permission.USER, Permission.MODERATE, Permission.ADMIN));
     private final Set<Permission> permissions;
 
     Role(Set<Permission> permissions) {
@@ -18,8 +22,8 @@ public enum Role {
         return permissions;
     }
 
-//    public Set<SimpleGrantedAuthority> getAuthorities() {
-//        return permissions.stream().map(p -> new SimpleGrantedAuthority(p.getPermission()))
-//                .collect(Collectors.toSet());
-//    }
+    public Set<SimpleGrantedAuthority> getAuthorities() {
+        return permissions.stream().map(p -> new SimpleGrantedAuthority(p.getPermission()))
+                .collect(Collectors.toSet());
+    }
 }

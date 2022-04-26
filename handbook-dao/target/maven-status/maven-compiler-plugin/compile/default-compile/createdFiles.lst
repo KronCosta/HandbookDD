@@ -1,0 +1,8 @@
+com\qmis\dao\EmployeeRepository.class
+com\qmis\entity\enums\Role.class
+com\qmis\entity\Employee.class
+com\qmis\entity\Position.class
+com\qmis\dao\PositionRepository.class
+com\qmis\dao\DepartmentRepository.class
+com\qmis\entity\Department.class
+com\qmis\entity\enums\Permission.class

@@ -1,0 +1,49 @@
+2022-04-23 13:23:36.149 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 8300 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-23 13:23:36.152 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-23 13:23:37.037 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-23 13:23:37.100 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 2 JPA repository interfaces. 
+2022-04-23 13:23:37.248 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=f5f6e514-30e3-3c58-9083-16eca694271b 
+2022-04-23 13:23:37.561 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-23 13:23:37.569 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-23 13:23:37.569 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-23 13:23:37.652 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-23 13:23:37.652 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1453 ms 
+2022-04-23 13:23:37.831 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-23 13:23:37.969 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-23 13:23:38.224 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-23 13:23:38.557 [main] INFO  liquibase.changelog : Creating database history table with name: public.databasechangelog 
+2022-04-23 13:23:38.564 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-23 13:23:38.660 [main] INFO  liquibase.changelog : Table department created 
+2022-04-23 13:23:38.661 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartment::QMIS ran successfully in 9ms 
+2022-04-23 13:23:38.673 [main] INFO  liquibase.changelog : Table position created 
+2022-04-23 13:23:38.674 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createPositionTable::QMIS ran successfully in 7ms 
+2022-04-23 13:23:38.680 [main] INFO  liquibase.changelog : Table employee created 
+2022-04-23 13:23:38.681 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableEmployee::QMIS ran successfully in 5ms 
+2022-04-23 13:23:38.692 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (department_id) 
+2022-04-23 13:23:38.693 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeeDepartment::QMIS ran successfully in 9ms 
+2022-04-23 13:23:38.697 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (position_id) 
+2022-04-23 13:23:38.698 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeePosition::QMIS ran successfully in 3ms 
+2022-04-23 13:23:38.704 [main] INFO  liquibase.changelog : Table department_repository created 
+2022-04-23 13:23:38.705 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartmentRepository::QMIS ran successfully in 5ms 
+2022-04-23 13:23:38.711 [main] INFO  liquibase.changelog : Index dep_index created 
+2022-04-23 13:23:38.712 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createDepartmentIndex::QMIS ran successfully in 3ms 
+2022-04-23 13:23:38.716 [main] INFO  liquibase.changelog : Foreign key constraint added to department_repository (parent_id) 
+2022-04-23 13:23:38.717 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyDepartmentRepository::QMIS ran successfully in 2ms 
+2022-04-23 13:23:38.725 [main] INFO  liquibase.changelog : Table user created 
+2022-04-23 13:23:38.726 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS ran successfully in 8ms 
+2022-04-23 13:23:38.730 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-23 13:23:38.817 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-23 13:23:38.864 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-23 13:23:38.974 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-23 13:23:39.092 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-23 13:23:39.689 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-23 13:23:39.699 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-23 13:23:40.145 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-23 13:23:40.821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8086 (http) with context path '' 
+2022-04-23 13:23:41.077 [main] INFO  com.qmis.Application : Started Application in 5.344 seconds (JVM running for 6.234) 
+2022-04-23 13:25:20.212 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-23 13:25:20.213 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2022-04-23 13:25:20.215 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2022-04-23 13:25:46.009 [http-nio-8086-exec-10] INFO  o.s.api.AbstractOpenApiResource : Init duration for springdoc-openapi is: 432 ms 
+2022-04-23 20:03:15.521 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6h37m9s768ms515µs200ns). 
+2022-04-23 21:15:27.568 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m41s94ms68µs). 

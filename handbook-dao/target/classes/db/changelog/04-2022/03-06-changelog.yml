@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: addTesDepartments
+      author: QMIS
+      changes:
+        - insert:
+            tableName: department_repository
+            columns:
+              - column:
+                  name: id
+                 value: 1
+              - column:
+                  name: parent_id
+                 value: null
+              - column:
+                  name: department_name
+                 value: Office

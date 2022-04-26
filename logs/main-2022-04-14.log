@@ -1,0 +1,95 @@
+2022-04-14 22:12:46.382 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on QMIS with PID 19668 (K:\Project\HandbookDD\handbook\target\classes started by Kron Costa in K:\Project\HandbookDD) 
+2022-04-14 22:12:46.384 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-14 22:12:46.977 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-14 22:12:47.016 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 32 ms. Found 2 JPA repository interfaces. 
+2022-04-14 22:12:47.128 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=d3c80d33-c193-32af-83a6-58fc3d31ca10 
+2022-04-14 22:12:47.349 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2022-04-14 22:12:47.355 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-14 22:12:47.355 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-14 22:12:47.414 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-14 22:12:47.414 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms 
+2022-04-14 22:12:47.549 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-14 22:12:47.679 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-14 22:12:47.781 [main] INFO  liquibase.database : Set default schema name to public 
+2022-04-14 22:12:47.833 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-14 22:12:48.109 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-14 22:12:48.146 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-14 22:12:48.211 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-14 22:12:48.250 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-14 22:12:48.347 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-14 22:12:48.418 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-14 22:12:48.796 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-14 22:12:48.802 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:12:49.096 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-14 22:12:49.393 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2022-04-14 22:12:49.570 [main] INFO  com.qmis.Application : Started Application in 3.424 seconds (JVM running for 4.219) 
+2022-04-14 22:12:55.267 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-14 22:12:55.267 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2022-04-14 22:12:55.268 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2022-04-14 22:13:19.385 [http-nio-8080-exec-4] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "eployees"] 
+2022-04-14 22:14:11.013 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:14:11.015 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-14 22:14:11.017 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-14 22:14:14.539 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on QMIS with PID 28280 (K:\Project\HandbookDD\handbook\target\classes started by Kron Costa in K:\Project\HandbookDD) 
+2022-04-14 22:14:14.540 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-14 22:14:15.028 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-14 22:14:15.061 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces. 
+2022-04-14 22:14:15.156 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=d3c80d33-c193-32af-83a6-58fc3d31ca10 
+2022-04-14 22:14:15.345 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2022-04-14 22:14:15.351 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-14 22:14:15.352 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-14 22:14:15.404 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-14 22:14:15.405 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 838 ms 
+2022-04-14 22:14:15.526 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-14 22:14:15.623 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-14 22:14:15.705 [main] INFO  liquibase.database : Set default schema name to public 
+2022-04-14 22:14:15.747 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-14 22:14:15.969 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-14 22:14:16.001 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-14 22:14:16.058 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-14 22:14:16.083 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-14 22:14:16.148 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-14 22:14:16.203 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-14 22:14:16.516 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-14 22:14:16.522 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:14:16.771 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-14 22:14:17.020 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2022-04-14 22:14:17.196 [main] INFO  com.qmis.Application : Started Application in 2.9 seconds (JVM running for 3.373) 
+2022-04-14 22:14:20.946 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-14 22:14:20.946 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2022-04-14 22:14:20.948 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Completed initialization in 2 ms 
+2022-04-14 22:14:20.969 [http-nio-8080-exec-1] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Failed to convert value of type 'java.lang.String' to required type 'java.lang.Integer'; nested exception is java.lang.NumberFormatException: For input string: "eployees"] 
+2022-04-14 22:15:38.686 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:15:38.687 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-14 22:15:38.689 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-14 22:15:42.007 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on QMIS with PID 14768 (K:\Project\HandbookDD\handbook\target\classes started by Kron Costa in K:\Project\HandbookDD) 
+2022-04-14 22:15:42.009 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-14 22:15:42.484 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-14 22:15:42.516 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 2 JPA repository interfaces. 
+2022-04-14 22:15:42.612 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=d3c80d33-c193-32af-83a6-58fc3d31ca10 
+2022-04-14 22:15:42.796 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8080 (http) 
+2022-04-14 22:15:42.802 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-14 22:15:42.802 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-14 22:15:42.855 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-14 22:15:42.856 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 821 ms 
+2022-04-14 22:15:42.971 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-14 22:15:43.068 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-14 22:15:43.149 [main] INFO  liquibase.database : Set default schema name to public 
+2022-04-14 22:15:43.191 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-14 22:15:43.406 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-14 22:15:43.438 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-14 22:15:43.496 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-14 22:15:43.523 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-14 22:15:43.588 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-14 22:15:43.644 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-14 22:15:43.959 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-14 22:15:43.965 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:15:44.221 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-14 22:15:44.467 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8080 (http) with context path '' 
+2022-04-14 22:15:44.643 [main] INFO  com.qmis.Application : Started Application in 2.872 seconds (JVM running for 3.315) 
+2022-04-14 22:15:52.929 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-14 22:15:52.929 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2022-04-14 22:15:52.930 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2022-04-14 22:17:12.441 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-14 22:17:12.443 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-14 22:17:12.445 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

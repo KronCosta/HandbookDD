@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: addTestEmployee
+      author: QMIS
+      changes:
+        - insert:
+            tableName: employee
+            columns:
+              - column:
+                  name: fio
+                 value: Валерий Жмышенко
+              - column:
+                  name: email
+                 value: pvnz@mail.com
+              - column:
+                  name: emp_date
+             valueDate: 2020-11-27
+              - column:
+                  name: position_id
+                 value: 2
+              - column:
+                  name: department_id
+                 value: 1

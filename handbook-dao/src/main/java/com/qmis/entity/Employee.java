@@ -1,19 +1,22 @@
 package com.qmis.entity;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.qmis.entity.enums.Role;
+import com.qmis.entity.enums.Status;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.experimental.Accessors;
-
+import lombok.extern.jackson.Jacksonized;
 
 import javax.persistence.*;
-import java.time.LocalDate;
 
 @Entity
 @Table(name = "employee")
 @Getter
 @Setter
 @Accessors(chain = true)
+@Jacksonized
 public class Employee {
 
     @Id
@@ -21,21 +24,31 @@ public class Employee {
     @Column(name = "id", nullable = false)
     private long id;
 
-    @Column(name = "fio", length = 50, nullable = false)
+    @Column(name = "fio", nullable = false)
     private String fio;
 
-    @Column(name = "emp_date", nullable = false)
-    private LocalDate employedDate;
 
-    @Column(name = "email", length = 50, unique = true)
+    @Column(name = "email", unique = true)
     private String email;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @Column(name = "password")
+    private String password;
+
+    @Column(name = "status", columnDefinition = "enum(''ACTIVE, 'BANNED')")
+    @Enumerated(EnumType.STRING)
+    private Status status;
+
+    @Column(name = "role" , columnDefinition = "enum('USER', 'MODERATOR', 'ADMIN')")
+    @Enumerated(EnumType.STRING)
+    private Role role;
+
+    @ManyToOne(optional = false, cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JsonIgnore
     @JoinColumn(name = "department_id")
     private Department department;
 
-    @ManyToOne(optional = false, cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinColumn(name = "position_id", nullable = false, updatable = false)
+    @ManyToOne(optional = false, cascade = CascadeType.MERGE, fetch = FetchType.LAZY)
+    @JsonIgnore
+    @JoinColumn(name = "position_id")
     private Position position;
-
 }

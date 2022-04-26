@@ -1,0 +1,5 @@
+com\qmis\config\SwaggerConfig.class
+com\qmis\config\SecurityConfig.class
+com\qmis\Application.class
+com\qmis\config\MailConfig.class
+com\qmis\config\security\SecurityUser.class

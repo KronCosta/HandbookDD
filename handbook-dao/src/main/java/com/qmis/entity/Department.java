@@ -1,7 +1,10 @@
 package com.qmis.entity;
 
+import com.fasterxml.jackson.annotation.JsonAlias;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.jackson.Jacksonized;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -10,6 +13,7 @@ import java.util.Set;
 @Setter
 @Getter
 @Table(name = "department")
+@Jacksonized
 public class Department {
 
     @Id
@@ -27,5 +31,6 @@ public class Department {
     private long chiefId;
 
     @OneToMany(mappedBy = "department", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @JsonIgnore
     private Set<Employee> employeeList;
 }

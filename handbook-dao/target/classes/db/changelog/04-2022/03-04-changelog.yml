@@ -1,0 +1,18 @@
+databaseChangeLog:
+  - changeSet:
+      id: addTestPosition
+      author: QMIS
+      changes:
+        - insert:
+            tableName: position
+            columns:
+              - column:
+                  name: name
+                 value: Руководитель
+              - column:
+                  name: role
+                 value: ADMIN
+              - column:
+                  name: employee_list
+                 value: 1
+

@@ -1,0 +1,942 @@
+2022-04-24 11:58:53.769 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10h48m59s955ms110µs400ns). 
+2022-04-24 12:53:17.934 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-24 12:53:17.941 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 12:53:17.946 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 16:59:36.618 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 2428 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 16:59:36.621 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 16:59:37.610 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 16:59:37.686 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces. 
+2022-04-24 16:59:37.865 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 16:59:38.203 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 16:59:38.212 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 16:59:38.212 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 16:59:38.291 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 16:59:38.291 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1629 ms 
+2022-04-24 16:59:38.511 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 16:59:38.673 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 16:59:38.917 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 16:59:39.221 [main] INFO  liquibase.changelog : Creating database history table with name: public.databasechangelog 
+2022-04-24 16:59:39.228 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 16:59:39.321 [main] INFO  liquibase.changelog : Table department created 
+2022-04-24 16:59:39.322 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartment::QMIS ran successfully in 9ms 
+2022-04-24 16:59:39.332 [main] INFO  liquibase.changelog : Table position created 
+2022-04-24 16:59:39.333 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createPositionTable::QMIS ran successfully in 7ms 
+2022-04-24 16:59:39.340 [main] INFO  liquibase.changelog : Table employee created 
+2022-04-24 16:59:39.341 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableEmployee::QMIS ran successfully in 5ms 
+2022-04-24 16:59:39.348 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (department_id) 
+2022-04-24 16:59:39.349 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeeDepartment::QMIS ran successfully in 5ms 
+2022-04-24 16:59:39.353 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (position_id) 
+2022-04-24 16:59:39.353 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeePosition::QMIS ran successfully in 2ms 
+2022-04-24 16:59:39.361 [main] INFO  liquibase.changelog : Table department_repository created 
+2022-04-24 16:59:39.361 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartmentRepository::QMIS ran successfully in 6ms 
+2022-04-24 16:59:39.366 [main] INFO  liquibase.changelog : Index dep_index created 
+2022-04-24 16:59:39.367 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createDepartmentIndex::QMIS ran successfully in 3ms 
+2022-04-24 16:59:39.371 [main] INFO  liquibase.changelog : Foreign key constraint added to department_repository (parent_id) 
+2022-04-24 16:59:39.372 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyDepartmentRepository::QMIS ran successfully in 4ms 
+2022-04-24 16:59:39.379 [main] INFO  liquibase.changelog : Table user created 
+2022-04-24 16:59:39.379 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS ran successfully in 6ms 
+2022-04-24 16:59:39.382 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 16:59:39.479 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-24 16:59:39.542 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-24 16:59:39.694 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-24 16:59:39.810 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-24 16:59:40.426 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-24 16:59:40.434 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-24 16:59:40.530 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-24 16:59:41.038 [main] WARN  o.s.security.core.userdetails.User : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications. 
+2022-04-24 16:59:41.192 [main] INFO  o.s.s.w.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c08461b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1dcf5f38, org.springframework.security.web.header.HeaderWriterFilter@14f03f2, org.springframework.security.web.csrf.CsrfFilter@36def543, org.springframework.security.web.authentication.logout.LogoutFilter@6b61a4b0, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2e4262d2, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@b3cbc0e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6c37c36, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@39eea4f6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@72b689f6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a110e7d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2060df8, org.springframework.security.web.session.SessionManagementFilter@31f4fdc5, org.springframework.security.web.access.ExceptionTranslationFilter@11df0bc7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5889e697] 
+2022-04-24 16:59:41.829 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8086 (http) with context path '' 
+2022-04-24 16:59:42.081 [main] INFO  com.qmis.Application : Started Application in 5.831 seconds (JVM running for 6.806) 
+2022-04-24 16:59:56.326 [http-nio-8086-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2022-04-24 16:59:56.327 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2022-04-24 16:59:56.328 [http-nio-8086-exec-1] INFO  o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2022-04-24 17:54:57.722 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m48s520ms246µs300ns). 
+2022-04-24 17:55:14.281 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-24 17:55:14.283 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 17:55:14.285 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:04:19.793 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 20432 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:04:19.795 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:04:20.796 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:04:20.864 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:04:21.034 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:04:21.346 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:04:21.353 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:04:21.354 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:04:21.430 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:04:21.430 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1590 ms 
+2022-04-24 19:04:21.622 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:04:21.768 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:04:21.986 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:04:22.293 [main] INFO  liquibase.changelog : Creating database history table with name: public.databasechangelog 
+2022-04-24 19:04:22.299 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:04:22.379 [main] INFO  liquibase.changelog : Table department created 
+2022-04-24 19:04:22.380 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartment::QMIS ran successfully in 9ms 
+2022-04-24 19:04:22.392 [main] INFO  liquibase.changelog : Table position created 
+2022-04-24 19:04:22.392 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createPositionTable::QMIS ran successfully in 7ms 
+2022-04-24 19:04:22.399 [main] INFO  liquibase.changelog : Table employee created 
+2022-04-24 19:04:22.400 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableEmployee::QMIS ran successfully in 6ms 
+2022-04-24 19:04:22.406 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (department_id) 
+2022-04-24 19:04:22.407 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeeDepartment::QMIS ran successfully in 4ms 
+2022-04-24 19:04:22.410 [main] INFO  liquibase.changelog : Foreign key constraint added to employee (position_id) 
+2022-04-24 19:04:22.411 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyEmployeePosition::QMIS ran successfully in 3ms 
+2022-04-24 19:04:22.418 [main] INFO  liquibase.changelog : Table department_repository created 
+2022-04-24 19:04:22.419 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createTableDepartmentRepository::QMIS ran successfully in 6ms 
+2022-04-24 19:04:22.425 [main] INFO  liquibase.changelog : Index dep_index created 
+2022-04-24 19:04:22.426 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createDepartmentIndex::QMIS ran successfully in 4ms 
+2022-04-24 19:04:22.430 [main] INFO  liquibase.changelog : Foreign key constraint added to department_repository (parent_id) 
+2022-04-24 19:04:22.431 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::addForeignKeyDepartmentRepository::QMIS ran successfully in 3ms 
+2022-04-24 19:04:22.437 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:04:22.439 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:04:22.444 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:04:22.447 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:04:22.447 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:04:22.562 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:04:22.565 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:04:22.575 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:04:22.596 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:06:11.684 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 2364 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:06:11.686 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:06:12.607 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:06:12.681 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 64 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:06:12.866 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:06:13.185 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:06:13.192 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:06:13.193 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:06:13.269 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:06:13.269 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1546 ms 
+2022-04-24 19:06:13.463 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:06:13.598 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:06:13.788 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:06:14.179 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:06:14.295 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:06:14.298 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:06:14.308 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:06:14.312 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:06:14.313 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:06:14.332 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:06:14.335 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:06:14.347 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:06:14.370 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:06:49.736 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 14380 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:06:49.738 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:06:50.582 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:06:50.649 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:06:50.816 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:06:51.133 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:06:51.140 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:06:51.140 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:06:51.214 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:06:51.214 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms 
+2022-04-24 19:06:51.403 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:06:51.653 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:06:51.852 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:06:52.214 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:06:52.295 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:06:52.297 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:06:52.303 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:06:52.306 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:06:52.306 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:06:52.353 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:06:52.356 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:06:52.366 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:06:52.385 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:08:14.604 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 2284 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:08:14.606 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:08:15.443 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:08:15.509 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:08:15.680 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:08:15.990 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:08:15.999 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:08:16.000 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:08:16.072 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:08:16.073 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1424 ms 
+2022-04-24 19:08:16.267 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:08:16.400 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:08:16.592 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:08:16.948 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:08:17.029 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:08:17.031 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:08:17.037 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:08:17.040 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:08:17.040 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:08:17.043 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:08:17.047 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:08:17.058 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:08:17.076 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: в целевой внешней таблице "authorities" нет ограничения уникальности, соответствующего данным ключам
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:08:31.105 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 4176 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:08:31.107 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:08:32.006 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:08:32.073 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:08:32.298 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:08:32.627 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:08:32.635 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:08:32.635 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:08:32.714 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:08:32.714 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1569 ms 
+2022-04-24 19:08:32.914 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:08:33.048 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:08:33.241 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:08:33.573 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:08:33.658 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:08:33.664 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:08:33.674 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:08:33.676 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:08:33.677 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:08:33.699 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:08:33.702 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:08:33.712 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:08:33.730 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:08:56.282 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 18196 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:08:56.284 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:08:57.123 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:08:57.193 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:08:57.365 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:08:57.668 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:08:57.675 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:08:57.675 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:08:57.750 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:08:57.751 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1432 ms 
+2022-04-24 19:08:57.950 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:08:58.121 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:08:58.313 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:08:58.663 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:08:58.746 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:08:58.749 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:08:58.759 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:08:58.762 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE] 
+2022-04-24 19:08:58.762 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:08:58.835 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:08:58.837 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:08:58.847 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:08:58.867 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: liquibase.exception.LiquibaseException: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:126)
+	at liquibase.Liquibase.lambda$null$0(Liquibase.java:265)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Liquibase.lambda$update$1(Liquibase.java:264)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Liquibase.runInScope(Liquibase.java:2405)
+	at liquibase.Liquibase.update(Liquibase.java:211)
+	at liquibase.Liquibase.update(Liquibase.java:197)
+	at liquibase.integration.spring.SpringLiquibase.performUpdate(SpringLiquibase.java:314)
+	at liquibase.integration.spring.SpringLiquibase.afterPropertiesSet(SpringLiquibase.java:269)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 18 common frames omitted
+Caused by: liquibase.exception.MigrationFailedException: Migration failed for change set db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS:
+     Reason: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:696)
+	at liquibase.changelog.visitor.UpdateVisitor.visit(UpdateVisitor.java:56)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$null$0(ChangeLogIterator.java:113)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.changelog.ChangeLogIterator$2.lambda$run$1(ChangeLogIterator.java:112)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.changelog.ChangeLogIterator$2.run(ChangeLogIterator.java:93)
+	at liquibase.Scope.lambda$child$0(Scope.java:180)
+	at liquibase.Scope.child(Scope.java:189)
+	at liquibase.Scope.child(Scope.java:179)
+	at liquibase.Scope.child(Scope.java:158)
+	at liquibase.Scope.child(Scope.java:243)
+	at liquibase.Scope.child(Scope.java:247)
+	at liquibase.changelog.ChangeLogIterator.run(ChangeLogIterator.java:65)
+	... 36 common frames omitted
+Caused by: liquibase.exception.DatabaseException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying. [Failed SQL: (0) ALTER TABLE public.users ADD CONSTRAINT users_key FOREIGN KEY (id) REFERENCES public.authorities (username) ON UPDATE CASCADE ON DELETE CASCADE]
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:397)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:83)
+	at liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:151)
+	at liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1279)
+	at liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1261)
+	at liquibase.changelog.ChangeSet.execute(ChangeSet.java:661)
+	... 56 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ОШИБКА: ограничение внешнего ключа "users_key" нельзя реализовать
+  Подробности: Столбцы ключа "id" и "username" имеют несовместимые типы: bigint и character varying.
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:329)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:315)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:291)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:286)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:393)
+	... 61 common frames omitted
+2022-04-24 19:09:43.003 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 17708 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:09:43.005 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:09:43.846 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:09:43.911 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:09:44.082 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:09:44.386 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:09:44.393 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:09:44.394 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:09:44.467 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:09:44.467 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1425 ms 
+2022-04-24 19:09:44.666 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:09:44.803 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:09:44.989 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:09:45.337 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:09:45.418 [main] INFO  liquibase.changelog : Table users created 
+2022-04-24 19:09:45.422 [main] INFO  liquibase.changelog : Table authorities created 
+2022-04-24 19:09:45.429 [main] INFO  liquibase.changelog : Foreign key constraint added to users (username) 
+2022-04-24 19:09:45.429 [main] INFO  liquibase.changelog : ChangeSet db/changelog/03-2022/30-03-changelog.xml::createUserTable::QMIS ran successfully in 21ms 
+2022-04-24 19:09:45.433 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:09:45.523 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-24 19:09:45.567 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-24 19:09:45.679 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-24 19:09:45.777 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-24 19:09:46.320 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [user] 
+2022-04-24 19:09:46.322 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [user] 
+2022-04-24 19:09:46.322 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:09:46.325 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:09:46.327 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:09:46.337 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:09:46.356 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [user]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [user]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing table [user]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:129)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:204)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+2022-04-24 19:10:50.794 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 1368 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:10:50.796 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:10:51.638 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:10:51.707 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:10:51.874 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:10:52.188 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:10:52.195 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:10:52.195 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:10:52.269 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:10:52.270 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1434 ms 
+2022-04-24 19:10:52.457 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:10:52.719 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:10:52.903 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:10:53.242 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:10:53.288 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:10:53.367 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-24 19:10:53.412 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-24 19:10:53.530 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-24 19:10:53.637 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-24 19:10:54.178 [main] ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean : Failed to initialize JPA EntityManagerFactory: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [login] in table [users] 
+2022-04-24 19:10:54.180 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [login] in table [users] 
+2022-04-24 19:10:54.180 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:10:54.183 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 
+2022-04-24 19:10:54.186 [main] INFO  o.a.catalina.core.StandardService : Stopping service [Tomcat] 
+2022-04-24 19:10:54.196 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+2022-04-24 19:10:54.215 [main] ERROR o.s.boot.SpringApplication : Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [login] in table [users]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:434)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:338)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at com.qmis.Application.main(Application.java:12)
+Caused by: javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [login] in table [users]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:421)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: org.hibernate.tool.schema.spi.SchemaManagementException: Schema-validation: missing column [login] in table [users]
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.validateTable(AbstractSchemaValidator.java:144)
+	at org.hibernate.tool.schema.internal.GroupedSchemaValidatorImpl.validateTables(GroupedSchemaValidatorImpl.java:42)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.performValidation(AbstractSchemaValidator.java:97)
+	at org.hibernate.tool.schema.internal.AbstractSchemaValidator.doValidation(AbstractSchemaValidator.java:76)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:204)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	... 20 common frames omitted
+2022-04-24 19:11:13.900 [main] INFO  com.qmis.Application : Starting Application using Java 17.0.2 on LAPTOP-A4J8876G with PID 19728 (C:\Users\mrsTi\IdeaProjects\HandbookDD\handbook\target\classes started by mrsTi in C:\Users\mrsTi\IdeaProjects\HandbookDD) 
+2022-04-24 19:11:13.902 [main] INFO  com.qmis.Application : No active profile set, falling back to default profiles: default 
+2022-04-24 19:11:14.760 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2022-04-24 19:11:14.827 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces. 
+2022-04-24 19:11:14.998 [main] INFO  o.s.c.context.scope.GenericScope : BeanFactory id=2743159f-3477-3057-8cd2-7648678893b9 
+2022-04-24 19:11:15.303 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 8086 (http) 
+2022-04-24 19:11:15.311 [main] INFO  o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2022-04-24 19:11:15.311 [main] INFO  o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2022-04-24 19:11:15.385 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2022-04-24 19:11:15.385 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1445 ms 
+2022-04-24 19:11:15.580 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2022-04-24 19:11:15.819 [main] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2022-04-24 19:11:16.004 [main] INFO  liquibase.lockservice : Successfully acquired change log lock 
+2022-04-24 19:11:16.354 [main] INFO  liquibase.changelog : Reading from public.databasechangelog 
+2022-04-24 19:11:16.397 [main] INFO  liquibase.lockservice : Successfully released change log lock 
+2022-04-24 19:11:16.477 [main] INFO  o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2022-04-24 19:11:16.519 [main] INFO  org.hibernate.Version : HHH000412: Hibernate ORM core version 5.6.7.Final 
+2022-04-24 19:11:16.633 [main] INFO  o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2022-04-24 19:11:16.727 [main] INFO  org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect 
+2022-04-24 19:11:17.266 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2022-04-24 19:11:17.274 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-24 19:11:17.369 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2022-04-24 19:11:17.876 [main] WARN  o.s.security.core.userdetails.User : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications. 
+2022-04-24 19:11:18.033 [main] INFO  o.s.s.w.DefaultSecurityFilterChain : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64a9fca7, org.springframework.security.web.context.SecurityContextPersistenceFilter@f36c8b1, org.springframework.security.web.header.HeaderWriterFilter@36dbfa68, org.springframework.security.web.csrf.CsrfFilter@2688b2be, org.springframework.security.web.authentication.logout.LogoutFilter@2e41b65a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@50f5ce5b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1c2273f6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@22f756c5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@109f95b1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36f1bd7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@485a5c9, org.springframework.security.web.session.SessionManagementFilter@480fb706, org.springframework.security.web.access.ExceptionTranslationFilter@462deb2b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6d3a56ea] 
+2022-04-24 19:11:18.650 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 8086 (http) with context path '' 
+2022-04-24 19:11:18.918 [main] INFO  com.qmis.Application : Started Application in 5.348 seconds (JVM running for 6.034) 
+2022-04-24 19:53:19.908 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default' 
+2022-04-24 19:53:19.911 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown initiated... 
+2022-04-24 19:53:19.914 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Shutdown completed. 

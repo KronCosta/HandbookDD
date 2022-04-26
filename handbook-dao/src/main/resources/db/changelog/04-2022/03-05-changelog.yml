@@ -1,0 +1,17 @@
+databaseChangeLog:
+  - changeSet:
+      id: addTestDepartment
+      author: QMIS
+      changes:
+        - insert:
+            tableName: department
+            columns:
+              - column:
+                  name: name
+                 value: Office
+              - column:
+                  name: chief_id
+                 value: 1
+              - column:
+                  name: employee_list
+                 value: 1

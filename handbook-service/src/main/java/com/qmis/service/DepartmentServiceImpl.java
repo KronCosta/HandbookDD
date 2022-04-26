@@ -1,28 +1,27 @@
 package com.qmis.service;
 
 import com.qmis.dao.DepartmentRepository;
+import com.qmis.dto.DepartmentDto;
 import com.qmis.entity.Department;
 import com.qmis.exception.ResourceNotFoundException;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.qmis.mapper.DepartmentMapper;
+import com.qmis.service.interfces.DepartmentService;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 
 @Service
+@RequiredArgsConstructor
 public class DepartmentServiceImpl implements DepartmentService {
 
-
     private final DepartmentRepository departmentRepository;
-
-    @Autowired
-    public DepartmentServiceImpl(DepartmentRepository departmentRepository) {
-        this.departmentRepository = departmentRepository;
-    }
+    private final DepartmentMapper departmentMapper;
 
     @Override
-    public Department saveDepartment(Department department) {
-        return departmentRepository.save(department);
+    public Department saveDepartment(DepartmentDto departmentDto) {
+        return departmentRepository.save(departmentMapper.createDtoToModel(departmentDto));
     }
 
     public List<Department> showAllDepartment() {
@@ -36,15 +35,14 @@ public class DepartmentServiceImpl implements DepartmentService {
     }
 
     @Override
-    public Department updateDepartmentById(Department department, long id){
+    public Department updateDepartmentById(DepartmentDto departmentDto, long id){
         // check
         Department existingDepartment = departmentRepository.findById(id).orElseThrow(() ->
                 new ResourceNotFoundException("Department","Id" ,id));
         // update
-        existingDepartment.setName(department.getName());
-        existingDepartment.setParentId(department.getParentId());
-        existingDepartment.setChiefId(department.getChiefId());
-        existingDepartment.setEmployeeList(department.getEmployeeList());
+        existingDepartment.setName(departmentDto.getName());
+        existingDepartment.setParentId(departmentDto.getParentId());
+        existingDepartment.setChiefId(departmentDto.getChiefId());
         //save
         departmentRepository.save(existingDepartment);
 
@@ -54,5 +52,6 @@ public class DepartmentServiceImpl implements DepartmentService {
     public void deleteDepartmentById(long id) {
         departmentRepository.deleteById(id);
     }
+
 
 }

@@ -7,10 +7,21 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="handbook-main" />
+      </profile>
+      <profile name="Annotation profile for HandbookDD" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.22/lombok-1.18.22.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+        </processorPath>
         <module name="handbook-web" />
         <module name="handbook-dao" />
         <module name="handbook" />
-        <module name="handbook-main" />
         <module name="handbook-service" />
       </profile>
     </annotationProcessing>
@@ -22,12 +33,12 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="HandbookDD" options="" />
-      <module name="handbook" options="-parameters" />
-      <module name="handbook-dao" options="-parameters" />
+      <module name="handbook" options="-parameters -Amapstruct.defaultComponentModel=spring" />
+      <module name="handbook-dao" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="handbook-main" options="-parameters" />
-      <module name="handbook-service" options="-parameters" />
+      <module name="handbook-service" options="-parameters -Amapstruct.defaultComponentModel=spring" />
       <module name="handbook-util" options="-parameters" />
-      <module name="handbook-web" options="-parameters" />
+      <module name="handbook-web" options="-parameters -Amapstruct.defaultComponentModel=spring" />
     </option>
   </component>
 </project>
